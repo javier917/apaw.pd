@@ -10,7 +10,7 @@ public class StateParado implements State {
 
     @Override
     public void cerrar(Conexion conexion) {
-
+        throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
     @Override
