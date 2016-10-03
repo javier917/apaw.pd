@@ -10,6 +10,13 @@ public abstract class ExpressionCompuesta implements Expresion {
         this.exp2 = exp2;
     }
 
-   
+    @Override
+    public String toString() {
+        return ("(" + this.exp1.toString() + this.operador() + this.exp2.toString() + ")");
+
+    }
+
+    public abstract String operador() ;
+
 
 }

@@ -11,8 +11,8 @@ public class Multiplicacion extends ExpressionCompuesta {
     }
 
     @Override
-    public String toString() {
-        return ("(" + this.exp1.toString() + "*" + this.exp2.toString() + ")");
-
+    public String operador() {
+        return "*";
     }
+
 }
