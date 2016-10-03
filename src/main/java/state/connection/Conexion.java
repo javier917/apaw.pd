@@ -2,13 +2,14 @@ package state.connection;
 
 public class Conexion {
     private Estado estado;
-
+    private State state;
     private Link link;
 
     public Conexion(Link link) {
         assert link != null;
         this.link = link;
         this.estado = Estado.CERRADO;
+        this.state=new StateCerrado();
     }
 
     public Link getLink() {

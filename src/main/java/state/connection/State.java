@@ -3,16 +3,16 @@ package state.connection;
 public interface State {
     
     
-    public void abrir();
+    public void abrir(Conexion conexion);
 
-    public void cerrar();
+    public void cerrar(Conexion conexion);
 
-    public void parar();
+    public void parar(Conexion conexion);
 
-    public void iniciar();
+    public void iniciar(Conexion conexion);
 
-    public void enviar();
+    public void enviar(Conexion conexion);
 
-    public void recibir();
+    public void recibir(Conexion conexion);
 
 }
