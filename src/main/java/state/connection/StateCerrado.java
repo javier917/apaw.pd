@@ -20,7 +20,7 @@ public class StateCerrado implements State {
 
     @Override
     public void iniciar(Conexion conexion) {
-
+        throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
     @Override

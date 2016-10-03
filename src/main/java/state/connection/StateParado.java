@@ -20,7 +20,8 @@ public class StateParado implements State {
 
     @Override
     public void iniciar(Conexion conexion) {
-
+        conexion.setEstado(Estado.PREPARADO);
+        conexion.setState(new StatePreparado());
     }
 
     @Override
