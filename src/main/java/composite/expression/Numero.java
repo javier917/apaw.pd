@@ -1,6 +1,6 @@
 package composite.expression;
 
-public class Numero implements Expression {
+public class Numero implements Expresion {
 
     private int numero;
 

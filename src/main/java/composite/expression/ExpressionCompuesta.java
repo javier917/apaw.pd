@@ -1,11 +1,11 @@
 package composite.expression;
 
-public abstract class ExpressionCompuesta implements Expression {
-    protected Expression exp1;
+public abstract class ExpressionCompuesta implements Expresion {
+    protected Expresion exp1;
 
-    protected Expression exp2;
+    protected Expresion exp2;
 
-    public ExpressionCompuesta(Expression exp1, Expression exp2) {
+    public ExpressionCompuesta(Expresion exp1, Expresion exp2) {
         this.exp1 = exp1;
         this.exp2 = exp2;
     }

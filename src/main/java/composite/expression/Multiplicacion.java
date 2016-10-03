@@ -1,7 +1,7 @@
 package composite.expression;
 
 public class Multiplicacion extends ExpressionCompuesta {
-    public Multiplicacion(Expression exp1, Expression exp2) {
+    public Multiplicacion(Expresion exp1, Expresion exp2) {
         super(exp1, exp2);
     }
 

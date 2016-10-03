@@ -1,6 +1,6 @@
 package composite.expression;
 
-public interface Expression {
+public interface Expresion {
     public int operar();
 
     public String toString();

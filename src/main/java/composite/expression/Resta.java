@@ -2,7 +2,7 @@ package composite.expression;
 
 public class Resta extends ExpressionCompuesta {
 
-    public Resta(Expression exp1, Expression exp2) {
+    public Resta(Expresion exp1, Expresion exp2) {
         super(exp1, exp2);
     }
 

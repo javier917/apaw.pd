@@ -2,7 +2,7 @@ package composite.expression;
 
 public class Suma extends ExpressionCompuesta {
 
-    public Suma(Expression exp1, Expression exp2) {
+    public Suma(Expresion exp1, Expresion exp2) {
        super(exp1,exp2);
     }
     @Override
