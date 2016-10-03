@@ -2,14 +2,16 @@ package state.connection;
 
 public class Conexion {
     private Estado estado;
+
     private State state;
+
     private Link link;
 
     public Conexion(Link link) {
         assert link != null;
         this.link = link;
         this.estado = Estado.CERRADO;
-        this.state=new StateCerrado();
+        this.state = new StateCerrado();
     }
 
     public Link getLink() {
@@ -20,7 +22,16 @@ public class Conexion {
         return this.estado;
     }
 
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
     public void abrir() {
+        this.state.abrir(this);
         if (this.estado == Estado.CERRADO) {
             this.estado = Estado.PREPARADO;
         } else if (this.estado == Estado.PARADO) {

@@ -4,7 +4,8 @@ public class StateCerrado implements State {
 
     @Override
     public void abrir(Conexion conexion) {
-
+        conexion.setEstado(Estado.PREPARADO);
+        conexion.setState(new StatePreparado());
     }
 
     @Override
