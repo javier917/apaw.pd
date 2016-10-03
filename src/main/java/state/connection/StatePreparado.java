@@ -16,7 +16,8 @@ public class StatePreparado implements State {
 
     @Override
     public void parar(Conexion conexion) {
-
+        conexion.setEstado(Estado.PARADO);
+        conexion.setState(new StateParado());
     }
 
     @Override

@@ -39,15 +39,7 @@ public class Conexion {
     }
 
     public void parar() {
-        if (this.estado == Estado.CERRADO) {
-            throw new UnsupportedOperationException("Acción no permitida... ");
-        } else if (this.estado == Estado.PARADO) {
-        } else if (this.estado == Estado.PREPARADO) {
-            this.estado = Estado.PARADO;
-        } else if (this.estado == Estado.ESPERANDO) {
-            throw new UnsupportedOperationException("Acción no permitida... ");
-        }
-        assert false : "estado imposible";
+        this.state.parar(this);
     }
 
     public void iniciar() {
