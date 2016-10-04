@@ -8,12 +8,11 @@ public class NaturalNumberEs extends NaturalNumber{
         super(value);
     }
 
-    public String getTextValue() {
-        if (this.value < textValue.length) {
-            return NaturalNumberEs.textValue[this.value];
-        } else {
-            return "???";
-        }
+    @Override
+    public String[] textValue() {  
+        return textValue;
     }
+
+
 
 }

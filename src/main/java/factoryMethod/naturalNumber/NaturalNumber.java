@@ -20,5 +20,12 @@ public abstract class NaturalNumber {
         this.setValue(this.value + value);
     }
 
-    public abstract String getTextValue();
+    public String getTextValue() {
+        if (this.value < textValue().length) {
+            return textValue()[this.value];
+        } else {
+            return "???";
+        }
+    }
+    public abstract String[] textValue();
 }
