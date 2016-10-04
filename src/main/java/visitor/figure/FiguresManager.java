@@ -24,11 +24,11 @@ public class FiguresManager {
     }
 
     public double totalNumberOfSides() {
-        double result = 0;
+        VisitorNumberOfSides vNoS=new VisitorNumberOfSides();
         for (Figure figure : figures) {
-            result += figure.numberOfSides();
+            figure.accept(vNoS);
         }
-        return result;
+        return vNoS.getNumberOfSides();
     }
 
 }
