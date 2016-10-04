@@ -3,8 +3,8 @@ package factoryMethod.naturalNumber;
 public class NaturalNumberEsCreator extends NaturalNumberCreator{
 
     @Override
-    public NaturalNumber createNaturalNumber() {
-        return new NaturalNumberEs(1);
+    public NaturalNumber createNaturalNumber(int number) {
+        return new NaturalNumberEs(number);
     }
 
 }

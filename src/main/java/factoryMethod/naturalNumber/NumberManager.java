@@ -13,7 +13,7 @@ public class NumberManager {
         this.creator = creator;
     }
     
-    public void CreateNumber(){
-        this.naturalNumber=this.creator.createNaturalNumber();
+    public void CreateNumber(int number){
+        this.naturalNumber=this.creator.createNaturalNumber(number);
     }
 }
