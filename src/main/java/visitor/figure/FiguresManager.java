@@ -16,11 +16,11 @@ public class FiguresManager {
     }
 
     public double totalArea() {
-        double result = 0;
+       VisitorArea vA=new VisitorArea();
         for (Figure figure : figures) {
-            result += figure.area();
+           figure.accept(vA);
         }
-        return result;
+        return vA.getArea();
     }
 
     public double totalNumberOfSides() {

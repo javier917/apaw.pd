@@ -21,5 +21,10 @@ public class VisitorArea extends Visitor{
        area=area+triangle.area();
         
     }
+    public double getArea() {
+        return area;
+    }
+    
+    
 
 }
