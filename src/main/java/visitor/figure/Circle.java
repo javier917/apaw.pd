@@ -1,5 +1,6 @@
 package visitor.figure;
 
+
 public class Circle extends Figure {
 
     private double radius;
@@ -17,6 +18,11 @@ public class Circle extends Figure {
     @Override
     public double numberOfSides() {
         return Double.POSITIVE_INFINITY;
+    }
+
+    @Override
+    public void accept(Visitor v) {
+       v.visitCircle(this);   
     }
 
 }

@@ -26,4 +26,10 @@ public class Triangle extends Figure {
         return super.toString();
     }
 
+    @Override
+    public void accept(Visitor v) {
+       v.visitTriangle(this);
+        
+    }
+
 }
