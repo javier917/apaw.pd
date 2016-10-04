@@ -1,7 +1,7 @@
 package factoryMethod.naturalNumber;
 
 public abstract class NaturalNumber {
-    private int value;
+    protected int value;
 
     public NaturalNumber(int value) {
         this.setValue(value);
