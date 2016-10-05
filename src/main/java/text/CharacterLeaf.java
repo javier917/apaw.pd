@@ -27,8 +27,13 @@ public class CharacterLeaf implements TextComponent {
 
     @Override
     public void add(TextComponent textComponent) {
-        // TODO Auto-generated method stub
+       
         
+    }
+
+    @Override
+    public boolean isComposite() {
+        return false;
     }
 
 }

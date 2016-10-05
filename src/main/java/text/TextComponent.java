@@ -6,6 +6,7 @@ public interface TextComponent {
     public abstract void add(TextComponent textComponent);
 
     public abstract void remove();
-
+    
+    public abstract boolean isComposite();
     
 }
