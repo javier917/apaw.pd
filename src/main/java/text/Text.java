@@ -4,11 +4,13 @@ public class Text extends TextComponentComposite{
     String text;
     @Override
     public String print(boolean mayus){
+        String devolver;
         if(mayus){
-            return this.text.toUpperCase();
+            devolver=this.text.toUpperCase();
         }else{
-            return this.text;
+            devolver= this.text;
         }
+        return devolver+"\n"+"---o---";
     }
 
     @Override

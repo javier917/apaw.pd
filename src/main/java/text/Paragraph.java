@@ -9,11 +9,13 @@ public class Paragraph extends TextComponentComposite {
 
     @Override
     public String print(boolean mayus) {
+        String devolver;
         if (mayus) {
-            return paragraph.toUpperCase();
+            devolver= paragraph.toUpperCase();
         } else {
-            return paragraph;
+            devolver= paragraph;
         }
+        return devolver+"\n";
     }
 
     @Override
