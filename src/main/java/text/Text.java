@@ -1,21 +1,28 @@
 package text;
 
 public class Text extends TextComponentComposite{
-
+    String text;
     @Override
     public String print(boolean mayus){
-        return "";
+        if(mayus){
+            return this.text.toUpperCase();
+        }else{
+            return this.text;
+        }
     }
 
     @Override
     public void remove() {
         
-        
     }
 
     @Override
     public void add(TextComponent textComponent) {
-        // TODO Auto-generated method stub
+       if(textComponent.isComposite()){
+           this.text=this.text+textComponent.print(false);
+       }else{
+           throw new UnsupportedOperationException();
+       }
         
     }
 
