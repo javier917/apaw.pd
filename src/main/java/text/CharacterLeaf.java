@@ -12,14 +12,23 @@ public class CharacterLeaf implements TextComponent {
     }
 
     @Override
-    public String print(String mayus) {
-        return (""+this.intrinsic).toUpperCase();
+    public String print(boolean mayus) {
+        if (mayus) {
+            return ("" + this.intrinsic).toUpperCase();
+        } else {
+            return ("" + this.intrinsic);
+        }
     }
 
     @Override
     public void remove() {
-       
 
+    }
+
+    @Override
+    public void add(TextComponent textComponent) {
+        // TODO Auto-generated method stub
+        
     }
 
 }

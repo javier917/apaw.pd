@@ -3,8 +3,8 @@ package text;
 public class Paragraph extends TextComponentComposite{
 
     @Override
-    public String print(String mayus) {
-        return mayus;
+    public String print(boolean mayus) {
+        return "";
         
         
     }
@@ -12,6 +12,12 @@ public class Paragraph extends TextComponentComposite{
     @Override
     public void remove() {
        
+        
+    }
+
+    @Override
+    public void add(TextComponent textComponent) {
+        // TODO Auto-generated method stub
         
     }
 
