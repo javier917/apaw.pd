@@ -12,17 +12,17 @@ public class Factory {
         this.character = new HashMap<>();
     }
     
-    public Factory getFactory(){
-        if(factory==null){
-            factory=new Factory();
-            return factory;
+    public static Factory getFactory(){
+        if(Factory.factory==null){
+            Factory.factory=new Factory();
+            return Factory.factory;
         }else{
-            return factory;
+            return Factory.factory;
         }
     }
     
     public CharacterLeaf get(char key){
-        if(character.containsKey(character)){
+        if(character.containsKey(key)){
             return character.get(key);
         }else{
             CharacterLeaf character=new CharacterLeaf(key);
