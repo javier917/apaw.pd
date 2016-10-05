@@ -1,16 +1,15 @@
 package vehiculoDecorator;
 
 public class GPSDecorador extends DecoradorExtras {
-    private int precio;
+    private static int PRECIO=500;
 
     public GPSDecorador(Vehiculo vehiculo) {
         super(vehiculo);
-        precio = 500;
     }
 
     @Override
     public int precioFinal() {
-        return this.vehiculo.precioFinal() + precio;
+        return this.vehiculo.precioFinal() + PRECIO;
     }
 
     @Override

@@ -1,16 +1,15 @@
 package vehiculoDecorator;
 
 public class MP3Decorador extends DecoradorExtras {
-    private int precio;
+    private static int PRECIO=50;
 
     public MP3Decorador(Vehiculo vehiculo) {
         super(vehiculo);
-        precio = 50;
     }
 
     @Override
     public int precioFinal() {
-        return this.vehiculo.precioFinal() + precio;
+        return this.vehiculo.precioFinal() + PRECIO;
     }
 
     @Override
