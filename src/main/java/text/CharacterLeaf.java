@@ -13,9 +13,7 @@ public class CharacterLeaf implements TextComponent {
 
     @Override
     public String print(String mayus) {
-        return mayus;
-        
-
+        return (""+this.intrinsic).toUpperCase();
     }
 
     @Override

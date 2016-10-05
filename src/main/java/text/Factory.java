@@ -22,6 +22,13 @@ public class Factory {
     }
     
     public CharacterLeaf get(char key){
-        return character.get(key);
+        if(character.containsKey(character)){
+            return character.get(key);
+        }else{
+            CharacterLeaf character=new CharacterLeaf(key);
+            this.character.put(key, character);
+            return character;
+        }
+       
     }
 }
