@@ -20,4 +20,8 @@ public class Factory {
             return factory;
         }
     }
+    
+    public CharacterLeaf get(char key){
+        return character.get(key);
+    }
 }
