@@ -3,14 +3,14 @@ package text;
 public class Text extends TextComponentComposite{
 
     @Override
-    public void printMayus() {
-        // TODO Auto-generated method stub
+    public String print(String mayus){
+        return mayus;
         
     }
 
     @Override
     public void remove() {
-        // TODO Auto-generated method stub
+        
         
     }
 
