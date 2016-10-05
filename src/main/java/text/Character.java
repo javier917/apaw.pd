@@ -1,5 +1,5 @@
 package text;
 
-public class Character implements TextComponent{
+public class Character implements TextComponent {
 
 }
