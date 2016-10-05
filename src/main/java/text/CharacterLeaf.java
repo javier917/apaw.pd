@@ -1,6 +1,6 @@
 package text;
 
-public class Paragraph extends TextComponentComposite{
+public class CharacterLeaf implements TextComponent {
 
     @Override
     public void printMayus() {
