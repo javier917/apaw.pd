@@ -9,21 +9,25 @@ public class Paragraph extends TextComponentComposite {
 
     @Override
     public String print(boolean mayus) {
-        if(mayus){
+        if (mayus) {
             return paragraph.toUpperCase();
-        }else{
+        } else {
             return paragraph;
         }
     }
 
     @Override
     public void remove() {
-        this.paragraph=this.paragraph.substring(0,this.paragraph.length()-1);
+        this.paragraph = this.paragraph.substring(0, this.paragraph.length() - 1);
     }
 
     @Override
-    public void add(TextComponent textComponent) {
-       this.paragraph=this.paragraph+textComponent.print(false);
+    public void add(TextComponent textComponent){
+        if (textComponent.isComposite()) {
+            throw new UnsupportedOperationException();
+        } else {
+            this.paragraph = this.paragraph + textComponent.print(false);
+        }
     }
 
 }
