@@ -8,10 +8,10 @@ import calculadora.ResetCommand;
 import calculadora.SubtractCommand;
 import upm.jbb.IO;
 
-public class Main {
+public class MainCalculadoraMementable {
     private CommandManager commandManager;
 
-    public Main() {
+    public MainCalculadoraMementable() {
             Calculator calculator = new CalculadorMementable();
             GestorMementos gestorMementos=new GestorMementos();
             this.commandManager = new CommandManager();
@@ -29,6 +29,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        IO.getIO().addView(new Main());
+        IO.getIO().addView(new MainCalculadoraMementable());
     }
 }
