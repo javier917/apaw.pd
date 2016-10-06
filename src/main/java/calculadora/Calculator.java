@@ -1,4 +1,4 @@
-package calculadora_con_deshacer;
+package calculadora;
 
 public class Calculator {
     private int total;

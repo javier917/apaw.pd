@@ -1,4 +1,4 @@
-package calculadora_con_deshacer;
+package calculadora;
 
 import java.util.HashMap;
 import java.util.Map;

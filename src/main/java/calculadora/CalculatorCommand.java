@@ -1,4 +1,4 @@
-package calculadora_con_deshacer;
+package calculadora;
 
 public abstract class CalculatorCommand implements Comando {
     private Calculator calculadora;

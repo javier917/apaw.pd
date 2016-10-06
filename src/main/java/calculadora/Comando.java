@@ -1,4 +1,4 @@
-package calculadora_con_deshacer;
+package calculadora;
 
 public interface Comando {
     public abstract String name();
