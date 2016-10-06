@@ -2,9 +2,9 @@ package calculadora_con_deshacer;
 
 import upm.jbb.IO;
 
-public class SubstractCommand extends CalculatorCommand{
+public class SubtractCommand extends CalculatorCommand{
 
-    public SubstractCommand(Calculator calculadora) {
+    public SubtractCommand(Calculator calculadora) {
         super(calculadora);
     }
 
@@ -16,7 +16,7 @@ public class SubstractCommand extends CalculatorCommand{
     @Override
     public void execute() {
         int resta=IO.getIO().readInt();
-        this.calculadora.subtract(resta);
+        getCalculadora().subtract(resta);
     }
 
 }

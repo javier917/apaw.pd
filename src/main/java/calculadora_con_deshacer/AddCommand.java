@@ -16,7 +16,7 @@ public class AddCommand extends CalculatorCommand{
     @Override
     public void execute() {
        int suma=IO.getIO().readInt();
-       this.calculadora.add(suma);  
+       getCalculadora().add(suma);  
     }
 
 }

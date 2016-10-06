@@ -14,7 +14,7 @@ public class PrintCommand extends CalculatorCommand {
 
     @Override
     public void execute() {
-       System.out.println(this.calculadora.getTotal());
+       System.out.println(getCalculadora().getTotal());
     }
 
 }
