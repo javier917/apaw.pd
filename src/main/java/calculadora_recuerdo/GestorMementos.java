@@ -6,8 +6,8 @@ import java.util.Map;
 public class GestorMementos {
     private Map<String, MementoCalculadora> mementoCalculadora = new HashMap<>();
 
-    public void add(MementoCalculadora calculadora) {
-        this.mementoCalculadora.put("" + calculadora.getTotal(), calculadora);
+    public void add(String key,MementoCalculadora calculadora) {
+        this.mementoCalculadora.put(key, calculadora);
     }
 
     public MementoCalculadora getMemento(String key) {
