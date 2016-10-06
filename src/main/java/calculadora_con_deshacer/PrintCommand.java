@@ -1,5 +1,7 @@
 package calculadora_con_deshacer;
 
+import upm.jbb.IO;
+
 public class PrintCommand extends CalculatorCommand {
 
     public PrintCommand(Calculator calculadora) {
@@ -14,7 +16,7 @@ public class PrintCommand extends CalculatorCommand {
 
     @Override
     public void execute() {
-       System.out.println(getCalculadora().getTotal());
+      IO.getIO().println(getCalculadora().getTotal());
     }
 
 }
