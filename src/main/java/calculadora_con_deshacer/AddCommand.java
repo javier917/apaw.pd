@@ -1,5 +1,7 @@
 package calculadora_con_deshacer;
 
+import upm.jbb.IO;
+
 public class AddCommand extends CalculatorCommand{
 
     public AddCommand(Calculator calculadora) {
@@ -13,7 +15,8 @@ public class AddCommand extends CalculatorCommand{
 
     @Override
     public void execute() {
-       this.calculadora.add(1);  
+       int suma=IO.getIO().readInt();
+       this.calculadora.add(suma);  
     }
 
 }
