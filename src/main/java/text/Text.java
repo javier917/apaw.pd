@@ -2,6 +2,9 @@ package text;
 
 public class Text extends TextComponentComposite{
     String text;
+    public Text() {
+        this.text="";
+    }
     @Override
     public String print(boolean mayus){
         String devolver;
@@ -10,7 +13,7 @@ public class Text extends TextComponentComposite{
         }else{
             devolver= this.text;
         }
-        return devolver+"\n"+"---o---";
+        return devolver+"---o---\n";
     }
 
     @Override
