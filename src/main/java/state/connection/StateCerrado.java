@@ -30,7 +30,7 @@ public class StateCerrado implements State {
 
     @Override
     public void recibir(Conexion conexion, int respuesta) {
-
+        throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
 }

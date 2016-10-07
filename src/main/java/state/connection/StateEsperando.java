@@ -24,13 +24,17 @@ public class StateEsperando implements State {
     }
 
     @Override
-    public void enviar(Conexion conexion,String msg) {
+    public void enviar(Conexion conexion, String msg) {
         throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
     @Override
     public void recibir(Conexion conexion, int respuesta) {
-
+        if (respuesta == 0) {
+            conexion.setEstado(Estado.PREPARADO);
+        } else {
+            conexion.setEstado(Estado.CERRADO);
+        }
     }
 
 }

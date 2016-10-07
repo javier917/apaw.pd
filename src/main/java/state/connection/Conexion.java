@@ -51,20 +51,7 @@ public class Conexion {
     }
 
     public void recibir(int respuesta) {
-        if (this.estado == Estado.CERRADO) {
-            throw new UnsupportedOperationException("Acción no permitida... ");
-        } else if (this.estado == Estado.PARADO) {
-            throw new UnsupportedOperationException("Acción no permitida... ");
-        } else if (this.estado == Estado.PREPARADO) {
-            throw new UnsupportedOperationException("Acción no permitida... ");
-        } else if (this.estado == Estado.ESPERANDO) {
-            if (respuesta == 0) {
-                this.estado = Estado.PREPARADO;
-            } else {
-                this.estado = Estado.CERRADO;
-            }
-        }
-        assert false : "estado imposible";
+       this.state.recibir(this, respuesta);
     }
 
 }

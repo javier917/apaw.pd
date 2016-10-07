@@ -15,7 +15,7 @@ public class StateParado implements State {
 
     @Override
     public void parar(Conexion conexion) {
-
+        throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
     @Override

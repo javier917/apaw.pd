@@ -26,14 +26,14 @@ public class StatePreparado implements State {
     }
 
     @Override
-    public void enviar(Conexion conexion,String msg) {
+    public void enviar(Conexion conexion, String msg) {
         conexion.getLink().enviar(msg);
         conexion.setState(new StateEsperando());
     }
 
     @Override
     public void recibir(Conexion conexion, int respuesta) {
-
+        throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
 }
