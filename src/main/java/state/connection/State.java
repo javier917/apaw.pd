@@ -11,8 +11,8 @@ public interface State {
 
     public void iniciar(Conexion conexion);
 
-    public void enviar(Conexion conexion);
+    public void enviar(Conexion conexion, String msg);
 
-    public void recibir(Conexion conexion);
+    public void recibir(Conexion conexion, int respuesta);
 
 }

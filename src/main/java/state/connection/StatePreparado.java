@@ -26,12 +26,13 @@ public class StatePreparado implements State {
     }
 
     @Override
-    public void enviar(Conexion conexion) {
-
+    public void enviar(Conexion conexion,String msg) {
+        conexion.getLink().enviar(msg);
+        conexion.setState(new StateEsperando());
     }
 
     @Override
-    public void recibir(Conexion conexion) {
+    public void recibir(Conexion conexion, int respuesta) {
 
     }
 

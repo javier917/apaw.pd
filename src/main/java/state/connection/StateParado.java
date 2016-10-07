@@ -25,12 +25,12 @@ public class StateParado implements State {
     }
 
     @Override
-    public void enviar(Conexion conexion) {
-
+    public void enviar(Conexion conexion, String msg) {
+        throw new UnsupportedOperationException("Acción no permitida... ");
     }
 
     @Override
-    public void recibir(Conexion conexion) {
+    public void recibir(Conexion conexion, int respuesta) {
 
     }
 
