@@ -32,8 +32,10 @@ public class StateEsperando implements State {
     public void recibir(Conexion conexion, int respuesta) {
         if (respuesta == 0) {
             conexion.setEstado(Estado.PREPARADO);
+            conexion.setState(new StatePreparado());
         } else {
             conexion.setEstado(Estado.CERRADO);
+            conexion.setState(new StateCerrado());
         }
     }
 

@@ -28,6 +28,7 @@ public class StatePreparado implements State {
     @Override
     public void enviar(Conexion conexion, String msg) {
         conexion.getLink().enviar(msg);
+        conexion.setEstado(Estado.ESPERANDO);
         conexion.setState(new StateEsperando());
     }
 
