@@ -1,4 +1,4 @@
-package singletonFactory;
+package singleton.factory;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
-import singletonFactory.ReferencesFactory;
+import singleton.factory.ReferencesFactory;
 
 public class ReferencesFactoryTest {
 

@@ -1,4 +1,4 @@
-package singletonFactory;
+package singleton.factory;
 
 
 
